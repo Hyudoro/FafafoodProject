@@ -1,0 +1,64 @@
+/* menu.css */
+.nav-hidden {
+    display: none;
+}
+.navbar{
+    background-color:blueviolet;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    font-size: 24px; /* Ajustez au besoin pour changer la taille de l'icône si c'est un caractère */
+    border: none;
+    background-color: rgb(47, 53, 244); /* ou toute autre couleur de votre choix */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 56px; /* Largeur du bouton */
+    height: 56px; /* Hauteur du bouton */
+    padding: 10px; /* Espace intérieur autour du contenu du bouton */
+    z-index: 1000;
+    display: flex; /* Utilisez flex pour centrer le contenu si nécessaire */
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+}
+
+
+.nav-visible {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 48px;
+    background-color: rgb(47, 122, 244);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police plus professionnelle */
+}
+
+#navbar ul li a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: right;
+}
+
+#navbar ul li a:hover {
+    background-color: #a20dd3;
+    transition: background-color 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+}

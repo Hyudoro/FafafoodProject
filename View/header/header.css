@@ -1,0 +1,87 @@
+/* Importation de la police Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+.navbar {
+  background-color: #007bff; /* Bleu primaire */
+  border-bottom: 3px solid #0056b3; /* Un peu plus foncé que le fond */
+}
+
+.navbar-brand, .nav-link {
+  color: #250af4 !important; /* Couleur personnalisée pour un contraste élevé */
+  transition: color 0.3s ease; /* Transition douce pour les changements de couleur */
+  font-family: 'Roboto', sans-serif; /* Police Roboto pour une apparence moderne et lisible */
+}
+
+.nav-link:hover, .nav-link:focus {
+  background-color: #0056b3; /* Bleu plus foncé au survol */
+  color: #ff9d00 !important; /* Couleur jaune pour le texte au survol pour un contraste élevé */
+  border-radius: 5px; /* Bordures arrondies pour les liens */
+}
+
+.nav-link.active {
+  color: #ffffff !important; /* Texte blanc pour l'élément actif */
+  transform: scale(0.95); /* Effet de légère réduction de taille pour l'élément actif */
+  background-color: #003875; /* Fond plus sombre pour l'élément actif */
+}
+
+.nav-origins {
+  color: #ff9d00 !important; /* Texte jaune pour une distinction visuelle */
+  font-weight: bold; /* Rend le texte en gras pour une meilleure visibilité */
+  margin-top: 7px; /* Espacement au-dessus des éléments pour aligner verticalement */
+}
+
+/* Style pour le bouton coulissant */
+.switch {
+  margin-left: 820px; /* Positionnement à gauche */
+  position: relative; /* Nécessaire pour le positionnement absolu du curseur */
+  display: inline-block; /* Permet au switch de ne prendre que l'espace nécessaire */
+  width: 60px; /* Largeur du switch */
+  height: 34px; /* Hauteur du switch */
+}
+
+.switch input { 
+  opacity: 0; /* Rend l'input de type checkbox invisible */
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #7ac8f2; /* Couleur par défaut du slider */
+  transition: .4s; /* Transition douce pour le changement de couleur */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white; /* Couleur du curseur en mode clair */
+  transition: .4s; /* Transition douce pour le déplacement du curseur */
+}
+
+/* Quand le switch est activé (checked) */
+input:checked + .slider {
+  background-color: #555; /* Fond plus sombre pour le mode sombre */
+}
+
+input:checked + .slider:before {
+  background-color: black; /* Curseur noir en mode sombre */
+  transform: translateX(26px); /* Déplacement du curseur vers la droite */
+}
+
+/* Style arrondi pour le slider et le curseur */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

@@ -1,0 +1,73 @@
+/* Style général de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('image_confirmation_ajout.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    opacity: 85%;
+}
+
+h1 {
+    color: #32a852;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style de la carte */
+.card {
+    background: #fff;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.card-text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Lora', sans-serif;
+}
+
+.card-text b {
+    color: #333;
+    font-family: 'Lora', sans-serif;
+}
+
+/* Boutons et liens */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}

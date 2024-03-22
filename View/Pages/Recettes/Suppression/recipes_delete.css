@@ -1,0 +1,47 @@
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+h1,.h5-1 {
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Police arrondie pour le titre */
+    text-align: center; /* Centre le texte sur l'écran */
+    text-shadow: 2px 2px 2px #333; /* Ombre textuelle pour un effet de démarcation */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Si vous souhaitez changer la police globale, modifiez ici */
+    background-image: url('image.png'); /* Ajoute votre image en arrière-plan */
+    background-size: cover; /* Assure que l'image de fond couvre toute la page */
+    background-attachment: relative; /* L'image de fond ne défile pas avec la page */
+}
+
+.delete-container {
+    text-align: center; /* Centre le contenu de .delete-container */
+}
+.button:hover {
+    background-color: #ff4747; /* Légèrement plus clair ou plus foncé pour l'effet de survol */
+}
+.button:active {
+    transform: scale(0.95); /* Réduit légèrement la taille du bouton lors du clic */
+}
+
+.delete-heading {
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Change la police d'écriture pour celle arrondie */
+    text-align: center; /* Centre le texte sur l'écran */
+    margin: 20px 0; /* Ajoute de l'espace autour du titre */
+    animation: fadeOut 2s infinite; /* Applique l'animation en boucle */
+}
+
+.button {
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Police arrondie pour le texte du bouton */
+    background-color: red; /* Couleur de fond rouge pour le bouton */
+    color: white; /* Couleur de texte blanche */
+    border: none; /* Supprime la bordure du bouton */
+    padding: 15px 30px; /* Agrandit le bouton */
+    font-size: 18px; /* Augmente la taille de la police */
+    cursor: pointer; /* Change le curseur en pointer lors du survol */
+    border-radius: 20px; /* Rend les coins du bouton arrondis */
+}
+
+/* Assure que le header et le footer ne sont pas affectés par l'image de fond */

@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    background-image: url('image_fond_personnalisation.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Ajoutez d'autres styles de base si nécessaire */
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-container {
+    margin: 30px auto;
+    width: 80%; /* ou la largeur que vous préférez */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 85%;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-top: 10px;
+}
+
+.form-container input[type=text],
+.form-container select,
+.form-container textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container input[type=submit] {
+    background-color: limegreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form-container input[type=submit]:hover {
+    background-color: darkgreen;
+}
+h6 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+.avertissement{
+    background-color: black;
+    opacity: 0.75;
+    text-decoration: none;
+    width: 400px;
+    margin: auto;
+    height: 100px;
+}
+
+.flag-container {
+    display:inline-flex; /* Utilisez flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Alignement vertical au centre */
+    margin-bottom: 10px; /* Espacement entre les éléments */
+}
+
+.flag-icon {
+    width: 30px; /* Largeur de l'icône de drapeau */
+    height: auto; /* Hauteur automatique pour maintenir le rapport largeur-hauteur */
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+
+.flag-text {
+    font-size: 16px; /* Taille de la police pour le texte du pays */
+}
+
+button {
+    margin-top: 1px;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+
+

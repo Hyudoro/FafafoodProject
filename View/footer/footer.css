@@ -1,0 +1,64 @@
+.bg-light.text-center.text-lg-start.mt-auto {
+    background-color: #000000; /* Nouvelle couleur de fond */
+}
+footer.bg-light {
+    background-color: beige!important;
+    color: #565656;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a.text-dark {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a.text-dark:hover {
+    color: #1c69bb;
+    text-decoration: none;
+}
+
+
+.container p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Styles spécifiques pour les titres */
+.about-title, .follow-title, .find-title {
+    color: #007bff;
+    margin-bottom: 5px; /* Ajustez selon le besoin */
+}
+
+/* Styles spécifiques pour les textes */
+.about-text, .follow-text, .find-text {
+    margin-bottom: 0.5rem;
+}
+
+/* Réduction de la hauteur du footer */
+footer .container {
+    padding: 20px; /* Réduit le padding pour diminuer la hauteur globale */
+    max-width: 80%; /* Ajustement pour réduire la largeur */
+    margin: auto;
+}
+
+/* Ajustement de l'alignement */
+.footer-about-us .about-title, .footer-about-us .about-text {
+    padding-left: left;
+}
+.footer-follow-us{
+    padding-left: center;
+
+}
+.footer-find-us{
+    padding-right: right;
+
+}
+@media (max-width: 768px) {
+    footer .container {
+        max-width: 100%; /* Pleine largeur sur petits écrans */
+    }
+    /* Centrage du texte pour la responsivité */
+    .footer-about-us, .footer-follow-us, .footer-find-us {
+        text-align: center;
+    }
+}

@@ -1,0 +1,82 @@
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-size: 16px;
+    background-image: url('inscription.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input, button, label {
+    font-family: inherit;
+}
+
+.inscription-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    opacity: 0.9;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    transition: transform 0.3s ease;
+}
+
+.inscription-container:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    position: relative; /* Pour positionner les emojis par rapport à cette div */
+    margin-bottom: 15px; /* Augmentation de l'espacement pour le dernier élément */
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.form-group label i {
+    margin-left: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="age"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.form-group .emoji {
+    position: block;
+    right: 20px; /* Position à droite du champ */
+    top: 10px; /* Aligné verticalement avec le champ */
+}
+
+.btn {
+    margin-top: 20px; /* Ajout d'un espace au-dessus du bouton */
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

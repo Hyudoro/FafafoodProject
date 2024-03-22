@@ -1,0 +1,79 @@
+.slider-boissons {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0 20px 20px;
+    overflow: visible;
+    position: relative;
+    background-color:rgb(207, 3, 3);
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+    background-color: beige;
+    border: rgb(0, 0, 0) 2px solid;
+}
+
+.right-slider {
+    float: right;
+}
+
+.slides-boissons {
+    position: relative;
+    height: 200px;
+}
+
+.slides-boissons div {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn-boissons {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); visibility: visible; opacity: 1; }
+}
+
+@keyframes slideOut-boissons {
+    from { transform: translateX(0); visibility: visible; opacity: 1; }
+    to { transform: translateX(-100%); visibility: hidden; opacity: 0; }
+}
+
+.slideIn-boissons {
+    animation-name: slideIn-boissons;
+    animation-duration: 1s;
+}
+
+.slideOut-boissons {
+    animation-name: slideOut-boissons;
+    animation-duration: 1s;
+}
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+
+}
+
+
+.prev-boissons, .next-boissons {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:hwb(247 24% 4% / 0.5);
+    color: #ffffffee;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    z-index: 100;
+}
+
+.prev-boissons { left: -50px; }
+.next-boissons { right: -50px; }

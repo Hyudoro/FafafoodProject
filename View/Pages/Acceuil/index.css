@@ -1,0 +1,188 @@
+/* Reset de base pour assurer la cohérence sur les navigateurs */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.bvn {
+    color: #ff9d00;
+    font-family: 'Lora', sans-serif;
+    place-self: center;
+    line-height: 1.6;
+    font-size: 70px;
+    box-shadow: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding: 15px 0;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    width: fit-content;
+    /* Animation de fade in et fade out */
+    animation: fadeInOut 5s ease-in-out infinite;
+}
+
+/* Keyframes pour l'animation fadeInOut */
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 1; /* Commence et finit totalement visible */
+    }
+    50% {
+        opacity: 0; /* Devient complètement transparent au milieu de l'animation */
+    }
+}
+
+
+
+.description {
+    font-size: 18px; /* Taille de police légèrement plus grande pour le texte principal */
+    margin-bottom: 20px; /* Espace sous le texte principal */
+}
+
+.container {
+    max-width: 1200px; /* Largeur maximale pour le contenu centré */
+    margin: auto;
+    padding: 20px;
+    text-decoration: none;
+}
+
+h3 a {
+    font-family: 'Roboto Slab', serif; /* Utilisation de Roboto Slab pour les titres */
+    font-weight: 800; /* Utilisation d'un poids épais pour plus de présence */
+    color: #ff0000; /* Couleur rouge comme spécifié */
+    color: inherit;
+    margin-bottom: 15px; /* Espace sous les titres */
+    text-shadow: 2px 2px 2px #333; /* Ombre textuelle pour un effet de démarcation */
+    text-decoration: none;
+}
+.recipes {
+        font-weight: 700; /* Choix d'un poids gras pour plus d'impact */
+        color: #4ba7f2; /* Une couleur foncée pour une bonne lisibilité */
+        margin-bottom: 15px; /* Espacement sous le titre pour séparer du contenu suivant */
+        text-shadow: 2px 2px 2px #333; /* Ombre textuelle pour un effet de démarcation */
+}
+
+/* Stylisation des boutons d'édition et de suppression */
+.button-group {
+    display: flex;
+    gap: 10px; /* Espace entre les boutons */
+}
+
+.btn-edite, .btn-deletee {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    color: #ffffff;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn-edite {
+    background-color: #5d96717b;
+}
+
+.btn-deletee {
+    background-color: #8a6ca7;
+}
+
+.btn-edite:hover, .btn-deletee:hover {
+    transform: scale(1.20);
+}
+
+.btn-edite:active, .btn-deletee:active {
+    transform: scale(0.95);
+}
+
+/* Styles supplémentaires pour les articles */
+article {
+    background-color: #37bfe9; /* Fond blanc pour une meilleure lisibilité */
+    border-radius: 10px; /* Bordures légèrement arrondies */
+    margin-bottom: 3px; /* Espace entre les articles */
+    padding: 15px; /* Padding interne pour l'espace autour du contenu */
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+article h3 { 
+    color:rgb(0, 0, 0) /* Espace sous les titres */
+}   
+
+.search-container {
+    display: flex;
+    justify-content: center; /* Centre le formulaire dans le conteneur */
+    margin-top: 20px; /* Espacement du haut */
+    padding: 20px; /* Padding autour du formulaire */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Ombre portée pour un effet de profondeur */
+}
+
+.search-container form {
+    display: flex;
+    flex-direction: column; /* Organise les éléments du formulaire en colonne */
+    align-items: center; /* Centre les éléments du formulaire */
+    width: 100%; /* Utilise toute la largeur du conteneur */
+}
+
+.search-container form input[type="text"] {
+    width: 60%; /* Largeur du champ de texte */
+    padding: 10px;
+    margin-bottom: 10px; /* Espacement sous le champ de texte */
+    border: 2px solid #ccc; /* Bordure du champ de texte */
+    border-radius: 20px; /* Bordures arrondies pour le champ de texte */
+    font-family: 'Arial Rounded MT Bold', sans-serif; /* Police arrondie pour le texte */
+    font-style: italic; /* Texte en italique */
+    background-color: beige; /* Couleur de fond du champ de texte */
+}
+
+.search-container form button {
+    padding: 10px 20px; /* Padding autour du texte du bouton */
+    border: none;
+    border-radius: 20px; /* Bordures arrondies pour le bouton */
+    background-color: #2b63db; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    font-size: 16px; /* Taille de la police du bouton */
+    cursor: pointer; /* Change le curseur en main au survol */
+    transition: background-color 0.3s ease; /* Transition douce pour la couleur de fond au survol */
+}
+
+.search-container form button:hover {
+    background-color: #45a049; /* Couleur de fond du bouton au survol */
+}
+
+/* Responsive design pour les petits écrans */
+@media (max-width: 768px) {
+    .search-container form {
+        flex-direction: column;
+    }
+
+    .search-container form input[type="text"],
+    .search-container form button {
+        width: 80%; /* Ajustement de la largeur sur les petits écrans */
+    }
+}
+
+
+
+/* Styles pour le mode sombre */
+.dark-mode body, .dark-mode h1,
+.dark-mode .container, .dark-mode .slider-container{
+    filter: brightness(90%);
+    background-color: black; /* Couleur de fond sombre */
+    color: #ffffff;
+}
+
+.dark-mode article, .dark-mode .search-container,.dark-mode article h3{
+    background-color: #000000; /* Fond noir pour les articles */
+    color: #ffffff; /* Texte blanc pour une meilleure lisibilité */
+}
+
+
+
