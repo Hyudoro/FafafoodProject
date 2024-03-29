@@ -1,0 +1,83 @@
+                                               ,----------------------------------------------------.
+                                               |                                                    |
+                                               |          Utilisateur -> Site Web:                  |
+                                               |           Accède au site web                       |
+                                               |                                                    |
+                                               '----------------------------------------------------'
+                                                              |
+                                                              |
+                                                              v
+                                               ,----------------------------------------------------.
+                                               |                                                    |
+                                               |     Site Web -> Site Web:                          |
+                                               |        Vérifie si l'utilisateur est connecté       |
+                                               |        et s'il a ses cookies activés               |
+                                               |                                                    |
+                                               '----------------------------------------------------'
+                                                              s
+                                                              |
+                                                              v
+                                               ,----------------------------------------------------.
+                                               |                                                    |
+                                               |   Site Web -> Utilisateur:                         |
+                                               |    - Affiche les recettes des autres utilisateurs  |
+                                               |    - Propose la connexion                          |
+                                               |    - Propose l'inscription                         |
+                                               |    - Permet de chercher des recettes               |
+                                               |                                                    |
+                                               '----------------------------------------------------'
+                                                              |
+                                                              |
+                                                              v
+                                               ,-----------------------------------------------------.
+                                               |                                                     |
+                                               |   alt Utilisateur est connecté:                     |
+                                               |                                                     |
+                                               |   ,---------------------------------.               |
+                                               |   |                                 |               |
+                                               |   |   Utilisateur -> Site Web:      |               |
+                                               |   |       - Vérifie les cookies     |               |
+                                               |   '---------------------------------'               |
+                                               |                                                     |
+                                               |   ,---------------------------------.               |
+                                               |   |                                 |               |
+                                               |   |   alt Cookies activés:          |               |
+                                               |   |                                 |               |
+                                               |   |   ,-------------------------.   |               |
+                                               |   |   |                         |   |               |
+                                               |   |   |   Utilisateur -> Site   |   |               |
+                                               |   |   |         Web:            |   |               |
+                                               |   |   |   - toutes les options+ |   |               |
+                                               |   |   |   - Personnalisation    |   |               |
+                                               |   |   |     du profil           |   |               |
+                                               |   |   |                         |   |               |
+                                               |   |   '-------------------------'   |               |
+                                               |   |                                 |               |
+                                               |   |                                 |               |
+                                               |   '---------------------------------'               |
+                                               |                                                     |
+                                               |   ,---------------------------------.               |
+                                               |   |                                 |               |
+                                               |   |   Alt Cookies Désactivés :      |               |
+                                               |   |                                 |               |
+                                               |   |                                 |               |
+                                               |   |                                 |               |
+                                               |   |  ,-----------------------------.|               |
+                                               |   |  |    Utilisateur -> Site Web:  |               |
+                                               |   |  |    - Voir les recettes       |               |
+                                               |   |  |    - Chercher des recettes   |               |
+                                               |   |  |    - Se connecter            |               |
+                                               |   |  |    - S'inscrire              |               |
+                                               |   |  |    - Noter les recettes      |               |
+                                               |   |  |    - Ajouter des recettes    |               |
+                                               |   |  |    - Supprimer des recettes  |               |
+                                               |   |  |    - Commenter les recettes  |               |
+                                               |   |  |                              |               |
+                                               |   |  `-----------------------------'|               |
+                                               |   |                                 |               |
+                                               |   |                                 |               |
+                                               |   |                                 |               |
+                                               |   |                                 |               |
+                                               |   '---------------------------------'               |
+                                               |                                                     |
+                                               '-----------------------------------------------------'
