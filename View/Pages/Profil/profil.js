@@ -3,6 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     button.addEventListener('click', function () {
         // Assurez-vous que le chemin est correct et testez-le directement dans votre navigateur
-        window.location.href = '/Fafafood/View/Pages/Profil/Personnalisation/personnalisation.php';
+        window.location.href = '/View/Pages/Profil/Personnalisation/personnalisation.php';
     });
 });

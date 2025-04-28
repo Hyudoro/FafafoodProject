@@ -53,6 +53,8 @@ $insertRecipe->execute([
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/View/Pages/Commentaires/comments_post_create.css">
+
     <title>Site de Recettes - Création de commentaire</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -60,6 +62,7 @@ $insertRecipe->execute([
 
     <?php require_once __DIR__ . '/../../header/header_template.php'; ?>
         <h1>Commentaire ajouté avec succès !</h1>
+        <div id="countdown">Redirection dans 5 secondes...</div>
 
         <div class="card">
             <div class="card-body">
@@ -69,5 +72,6 @@ $insertRecipe->execute([
         </div>
     </div>
     <?php require_once '../../../../Fafafood/View/footer/footer_template.php'; ?>
+    <script src="/View/Pages/compte_a_rebours.js"></script>
 </body>
 </html>

@@ -11,9 +11,9 @@ require_once __DIR__ . '/../../../Control/functions.php';
 
 if (isset($_COOKIE['user_data'])) {
     $data = explode(";", trim($_COOKIE['user_data']));
-    if ($data[5] != "/Fafafood/View/Pages/Profil/Personnalisation/Photo_de_profil/") {
+    if ($data[5] != "/View/Pages/Profil/Personnalisation/Photo_de_profil/") {
         $profileImagePath = htmlspecialchars($data[5]);
-    }elseif($data[5] === "/Fafafood/View/Pages/Profil/Personnalisation/Photo_de_profil/"){
+    }elseif($data[5] === "/View/Pages/Profil/Personnalisation/Photo_de_profil/"){
     $profileImagePath = htmlspecialchars($data[5] . "default_image.jpg");
 }
 }
@@ -27,7 +27,7 @@ if (isset($_COOKIE['user_data'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/Fafafood/View/Pages/Profil/profil.css" rel="stylesheet">
+    <link href="/View/Pages/Profil/profil.css" rel="stylesheet">
     <title>Profil</title>
 </head>
 <body>
@@ -71,17 +71,17 @@ if (isset($_COOKIE['user_data'])) {
                 <h3> Origines : <?php echo htmlspecialchars($data[6]); ?></h3><br>
                 <h3>Photo de profil  </h3> <img src="<?php echo $profileImagePath; ?>" alt="Profile">
         <?php else: ?>
-            <h3>Photo de profil  </h3> <img src="/Fafafood/View/Pages/Profil/Personnalisation/Photo_de_profil/default_image.jpg" alt="Profile">
+            <h3>Photo de profil  </h3> <img src="/View/Pages/Profil/Personnalisation/Photo_de_profil/default_image.jpg" alt="Profile">
         <?php endif; ?>
 
         <div class="button-container">
-            <button class="buttone" type="button" onclick="if(checkAndActivateCookies()){ window.location.href = '/Fafafood/View/Pages/Profil/Personnalisation/personnalisation.php'; }">Personnaliser</button>
+            <button class="buttone" type="button" onclick="if(checkAndActivateCookies()){ window.location.href = '/View/Pages/Profil/Personnalisation/personnalisation.php'; }">Personnaliser</button>
         </div>
         <div class="button_retour">
-            <button class="button_back" type="button" onclick="window.location.href = '/Fafafood/View/Pages/Acceuil/index.php';">Retour</button>
+            <button class="button_back" type="button" onclick="window.location.href = '/View/Pages/Acceuil/index.php';">Retour</button>
     </div>
-    <button class="button delete-button" type="button" onclick="deleteCookies();">Supprimer les cookies</button>
-    <script src="/Fafafood/View/Pages/Profil/profil.js"></script>
-    <script src="/Fafafood/Control/cookies.js"></script>
+    <button class="delete-button" type="button" onclick="deleteCookies();">Supprimer les cookies</button>
+    <script src="/View/Pages/Profil/profil.js"></script>
+    <script src="/Control/cookies.js"></script>
 </body>
 </html>

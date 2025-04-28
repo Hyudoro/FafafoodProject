@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Fafafood/View/Pages/Profil/Personnalisation/personnalisation.css">
+    <link rel="stylesheet" href="/View/Pages/Profil/Personnalisation/personnalisation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
     <title>Personnalisation du Profil</title>
 </head>
@@ -11,7 +11,7 @@
     <h1>Personnalisation</h1>
 
     <div class="form-container">
-     <form id="profile-customization-form" method="post" action="traitement-personnalisation.php" enctype="multipart/form-data">
+     <form id="profile-customization-form" method="post" action="/View/Pages/Profil/Personnalisation/Traitement_personnalisation/traitement-personnalisation.php" enctype="multipart/form-data">
             <label for="profile-pic">Photo de profil :</label>
               <input type="file" id="profile-pic" name="profile-pic">
             <label for="gender">Sexe :</label>
@@ -45,7 +45,7 @@
             </select>
 
             <input type="submit" value="Sauvegarder">
-            <button class="retour" type="button"  onclick="window.location.href = '/Fafafood/View/Pages/Profil/profil.php';">Retour</button>
+            <button class="retour" type="button"  onclick="window.location.href = '/View/Pages/Profil/profil.php';">Retour</button>
         </form>
     </div>
     <div class="avertissement">
@@ -57,8 +57,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-    <script src="/Fafafood/View/Pages/Profil/Personnalisation/personnalisation.js"></script>
-    <script src="/Fafafood/Control/cookies.js"></script>
+    <script src="/View/Pages/Profil/Personnalisation/personnalisation.js"></script>
+    <script src="/Control/cookies.js"></script>
 </body>
-<?php require_once '..\..\..\footer\footer_template.php'; ?>
+<?php require_once '../../../footer/footer_template.php'; ?>
 </html>

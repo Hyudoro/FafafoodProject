@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../login/isConnect.php';
 ?>
 <?php require_once __DIR__ . '/../../../View/header/header_template.php'; ?>
-<form action="/Fafafood/View/Pages/Commentaires/comments_post_create.php" method="POST">
+<form action="/View/Pages/Commentaires/comments_post_create.php" method="POST">
     <div class="mb-3 visually-hidden">
         <input class="form-control" type="text" name="recipe_id" value="<?php echo $recipe['recipe_id']; ?>" />
     </div>
@@ -18,4 +18,5 @@ require_once __DIR__ . '/../login/isConnect.php';
                   name="comment"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Envoyer</button>
+    <script src="/View/Pages/Commentaires/validation_commentaire.js"></script>
 </form>

@@ -31,7 +31,7 @@ $recipe = $retrieveRecipeStatement->fetch(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Fafafood/View/Pages/Recettes/Mise_a_jour/recipes_update.css">
+    <link rel="stylesheet" href="/View/Pages/Recettes/Mise_a_jour/recipes_update.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <title>Site de Recettes - Edition de recette</title>
 </head>

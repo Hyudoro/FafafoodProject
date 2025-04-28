@@ -26,11 +26,11 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                 'email' => $user['email'],
                 'user_id' => $user['user_id'],
             ];
-            redirectToUrl('/Fafafood/View/Pages/Acceuil/index.php');
+            redirectToUrl('/View/Pages/Acceuil/index.php');
         } else {
             // Message d'erreur si l'authentification échoue
             $_SESSION['LOGIN_ERROR_MESSAGE'] = 'Les informations envoyées ne permettent pas de vous identifier.';
-            redirectToUrl('/Fafafood/View/Pages/login/login.php');
+            redirectToUrl('/View/Pages/login/login.php');
         }
     }
 } else {

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once __DIR__ . '\..\..\login\isConnect.php';
+require_once __DIR__ . '/../../login/isConnect.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,11 +10,11 @@ require_once __DIR__ . '\..\..\login\isConnect.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Fafafood/View/Pages/Recettes/Ajout/recipes_create.css">
+    <link rel="stylesheet" href="/View/Pages/Recettes/Ajout/recipes_create.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <title>Site de Recettes - Ajout de recette</title>
 </head>
-<?php require_once __DIR__ . '\..\..\..\header\header_template.php'; ?>
+<?php require_once __DIR__ . '/../../../header/header_template.php'; ?>
 <body>
     <div class="container">
         <h1>Ajouter une recette</h1>

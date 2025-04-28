@@ -1,0 +1,16 @@
+# Fichiers d'environnement
+.env
+
+# Répertoire de téléchargement
+/uploads/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Vendor Composer
+/vendor/
+
+# Cache IDE
+.vscode/
+.idea/

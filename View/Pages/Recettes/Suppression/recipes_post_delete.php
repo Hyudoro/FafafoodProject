@@ -23,4 +23,4 @@ $deleteRecipeStatement->execute([
     'id' => (int)$postData['id'],
 ]);
 
-redirectToUrl('/Fafafood/View/Pages/Acceuil/index.php');
+redirectToUrl('/View/Pages/Acceuil/index.php');
