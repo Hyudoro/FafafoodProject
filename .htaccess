@@ -1,0 +1,27 @@
+# Forcer l'encodage UTF-8
+AddDefaultCharset UTF-8
+
+# Protéger les fichiers sensibles (.env par exemple)
+<FilesMatch "^\.env">
+    Require all denied
+</FilesMatch>
+
+# Activer le moteur de réécriture d'URL
+RewriteEngine On
+
+# Rediriger www vers non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Rediriger HTTP vers HTTPS si nécessaire
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Page d'erreur 404 personnalisée
+ErrorDocument 404 /404.html
+
+# Réécriture d'URL "jolie" (facultatif, décommenter si besoin)
+# Exemple : site.com/page au lieu de site.com/page.php
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.+)$ $1.php [L,QSA]
