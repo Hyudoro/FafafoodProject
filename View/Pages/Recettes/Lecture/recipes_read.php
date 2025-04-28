@@ -42,7 +42,7 @@ $retrieveAverageRatingStatement = $mysqlClient->prepare('SELECT ROUND(AVG(c.revi
     FROM recipes r
     LEFT JOIN comments c ON r.recipe_id = c.recipe_id
     WHERE r.recipe_id = :id');
-
+    
 $retrieveAverageRatingStatement->execute([
     'id' => (int)$getData['id'],
 ]);
@@ -78,12 +78,15 @@ foreach ($recipeWithComments as $comment) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/View/Pages/Recettes/Lecture/recipes_read.css">
     <title>Site de Recettes - <?php echo $recipe['title']; ?></title>
 </head>
 <?php require_once __DIR__ . '/../../../header/header_template.php'; ?>
 <body class="d-flex flex-column min-vh-100">
-    <div class="container">
+    <main class = "flex-grow-1">
+    <div class="container3">
         <h1><?php echo $recipe['title'] ; ?></h1>
+        <h5>Recette</h5>
         <div class="row">
             <article class="col">
                 <?php echo $recipe['recipe'] ; ?>
@@ -119,6 +122,6 @@ foreach ($recipeWithComments as $comment) {
             <?php require_once __DIR__ . '/../../Commentaires/comments_create.php'; ?>
         <?php endif; ?>
     </div>
+    <?php require_once '../../../../View/footer/footer_template.php'; ?>
 </body>
-<?php require_once '../../../../View/footer/footer_template.php'; ?>
 </html>

@@ -1,12 +1,29 @@
-.bg-light.text-center.text-lg-start.mt-auto {
-    background-color: #000000; /* Nouvelle couleur de fond */
-}
-footer.bg-light {
-    background-color: beige!important;
+footer .container {
+    background-color: beige;
     color: #565656;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 0;
+    margin-top: 20px; /* Important pour Flexbox sticky footer */
+    margin-bottom: 20px;
 }
 
+/* Structure interne du footer */
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Chaque section du footer (fixe l'alignement horizontal) */
+.footer-about-us,
+.footer-follow-us,
+.footer-find-us {
+    flex: 1 1 30%;
+    min-width: 200px; /* Pour éviter que ce soit trop petit sur mobile */
+}
+
+/* Lien dans le footer */
 footer a.text-dark {
     color: #007bff;
     text-decoration: none;
@@ -14,51 +31,52 @@ footer a.text-dark {
 
 footer a.text-dark:hover {
     color: #1c69bb;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-
-.container p {
+/* Textes dans le footer */
+footer p {
     font-size: 16px;
     line-height: 1.6;
 }
 
-/* Styles spécifiques pour les titres */
-.about-title, .follow-title, .find-title {
+/* Titres de sections du footer */
+footer .about-title, 
+footer .follow-title, 
+footer .find-title {
     color: #007bff;
-    margin-bottom: 5px; /* Ajustez selon le besoin */
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-/* Styles spécifiques pour les textes */
-.about-text, .follow-text, .find-text {
+/* Textes spécifiques */
+footer .about-text, 
+footer .follow-text, 
+footer .find-text {
     margin-bottom: 0.5rem;
 }
 
-/* Réduction de la hauteur du footer */
-footer .container {
-    padding: 20px; /* Réduit le padding pour diminuer la hauteur globale */
-    max-width: 80%; /* Ajustement pour réduire la largeur */
-    margin: auto;
+/* Alignements */
+.footer-about-us {
+    text-align: left;
+}
+.footer-follow-us {
+    text-align: center;
+}
+.footer-find-us {
+    text-align: right;
 }
 
-/* Ajustement de l'alignement */
-.footer-about-us .about-title, .footer-about-us .about-text {
-    padding-left: left;
-}
-.footer-follow-us{
-    padding-left: center;
-
-}
-.footer-find-us{
-    padding-right: right;
-
-}
+/* Responsive mobile */
 @media (max-width: 768px) {
     footer .container {
-        max-width: 100%; /* Pleine largeur sur petits écrans */
+        max-width: 100%;
     }
-    /* Centrage du texte pour la responsivité */
-    .footer-about-us, .footer-follow-us, .footer-find-us {
+    .footer-about-us, 
+    .footer-follow-us, 
+    .footer-find-us {
         text-align: center;
+        flex: 1 1 100%; /* Passe en colonne complète sur mobile */
+        margin-bottom: 20px; /* Séparer visuellement les sections */
     }
 }

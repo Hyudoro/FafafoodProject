@@ -43,7 +43,7 @@ $insertRecipe->execute([
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Fafafood/View/Pages/Recettes/Ajout/recipes_post_create.css">
+    <link rel="stylesheet" href="/View/Pages/Recettes/Ajout/recipes_post_create.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Site de Recettes - Création de recette</title>
@@ -53,6 +53,7 @@ $insertRecipe->execute([
     <div class="container">
         <!-- MESSAGE DE SUCCES -->
         <h1>Recette ajoutée avec succès !</h1>
+        <div id="countdown">Redirection dans 5 secondes...</div>
 
         <div class="card">
             <div class="card-body">
@@ -62,6 +63,7 @@ $insertRecipe->execute([
             </div>
         </div>
     </div>
+    <script src="/View/Pages/compte_a_rebours.js"></script>
 </body>
 <?php require_once '../../../footer/footer_template.php'; ?>
 </html>

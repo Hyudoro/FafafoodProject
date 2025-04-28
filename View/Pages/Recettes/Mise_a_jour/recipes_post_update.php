@@ -44,13 +44,20 @@ $insertRecipeStatement->execute([
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Fafafood/View/Pages/Recettes/Mise_a_jour/recipes_post_update.css">
+    <link rel="stylesheet" href="/View/Pages/Recettes/Mise_a_jour/recipes_post_update.css">
     <title>Site de Recettes - Création de recette</title>
 </head>
 <?php require_once __DIR__ . '/../../../header/header_template.php'; ?>
+<script>
+    setTiemout(function(){
+        window.location.href = "/View/Pages/Acceuil/index.php";
+    }, 2000);
+
+</script>
 <body class="d-flex flex-column min-vh-100">
     <div class="container">
         <h1>Recette modifiée avec succès !</h1>
+        <div id="countdown">Redirection dans 5 secondes...</div>
 
         <div class="card">
 
@@ -61,6 +68,7 @@ $insertRecipeStatement->execute([
             </div>
         </div>
     </div>
+    <script src="/View/Pages/compte_a_rebours.js"></script>
 </body>
 <?php require_once '../../../footer/footer_template.php'; ?>
 </html>

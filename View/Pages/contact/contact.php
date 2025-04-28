@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php require_once __DIR__ . '\..\login\isConnect.php'; ?>
+<?php require_once __DIR__ . '/../login/isConnect.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,11 +7,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Fafafood/View/Pages/contact/contact.css">
+    <link rel="stylesheet" href="/View/Pages/contact/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Site de Recettes - Contact</title>
 </head>
-<?php require_once __DIR__ . '\..\..\header\header_template.php'; ?>
+<?php require_once __DIR__ . '/../../header/header_template.php'; ?>
 <body class="d-flex flex-column min-vh-100">
     <div class="container">
         <h1>Contactez-nous</h1>
@@ -36,7 +36,7 @@
             <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
     </div>
-    <?php require_once '..\..\footer\footer_template.php'; ?>
+    <?php require_once '../../footer/footer_template.php'; ?>
 </body>
 
 </html>

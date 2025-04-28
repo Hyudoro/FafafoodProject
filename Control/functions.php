@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 
-require_once __DIR__ . '\..\Model\variables.php';
+require_once __DIR__ . '/../Model/variables.php';
 
 function displayAuthor(string $authorEmail, array $users): string
 {

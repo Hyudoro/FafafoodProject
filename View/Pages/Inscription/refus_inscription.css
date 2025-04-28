@@ -1,0 +1,42 @@
+/* Style global */
+body {
+    background-color: #fff8f0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Conteneur de l'erreur */
+.error-container {
+    background-color: #ffebee;
+    border: 1px solid #f44336;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Titre */
+.error-container h1 {
+    color: #c62828;
+    margin-bottom: 20px;
+}
+
+/* Message d'erreur */
+.error-message {
+    font-size: 1.2rem;
+    color: #d32f2f;
+    margin-bottom: 30px;
+}
+
+/* Countdown */
+#countdown {
+    color: #4caf50;
+    font-weight: bold;
+}

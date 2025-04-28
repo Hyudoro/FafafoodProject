@@ -10,7 +10,7 @@
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <!-- Footer CSS -->
-    <link rel="stylesheet" href="/Fafafood/View/footer/footer.css">
+    <link rel="stylesheet" href="/View/footer/footer.css">
 </head>
 <body>
 </body>

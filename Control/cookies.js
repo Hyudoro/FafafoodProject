@@ -22,11 +22,15 @@ function checkAndActivateCookies() {
 
 
 function deleteCookies() {
-    // Effacer le cookie en définissant la date d'expiration dans le passé
+    // Supprimer les cookies
     document.cookie = "acceptCookies=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
     document.cookie = "user_data=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+
+    // Message d'information
     alert("Vos cookies ont bien été supprimés.");
-    
+
+    // Rediriger après que l'utilisateur ferme l'alerte
+    window.location.href = '/View/Pages/Profil/profil.php';
 }
 
 

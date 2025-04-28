@@ -21,7 +21,7 @@ if (!isset($getData['id']) || !is_numeric($getData['id'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Fafafood/View/Pages/Recettes/Suppression/recipes_delete.css">
+    <link rel="stylesheet" href="/View/Pages/Recettes/Suppression/recipes_delete.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Suppression recette</title>
 
@@ -39,7 +39,7 @@ if (!isset($getData['id']) || !is_numeric($getData['id'])) {
         <button type="submit" class="button"><h5 class="h5-1">Supprimer</h5></button>
     </form>
     <br />
-    <script src="/Fafafood/View/Pages/Recettes/Suppression/recipes_delete.js"></script>
+    <script src="/View/Pages/Recettes/Suppression/recipes_delete.js"></script>
 </div>
 </body>
 <?php require_once '../../../footer/footer_template.php'; ?>
