@@ -1,3 +1,7 @@
+# Set custom homepage
+DirectoryIndex View/Pages/Acceuil/index.php
+
+
 # Forcer l'encodage UTF-8
 AddDefaultCharset UTF-8
 
