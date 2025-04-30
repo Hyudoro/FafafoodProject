@@ -48,7 +48,7 @@
                <?php if(!isset($_SESSION["LOGGED_USER"])): ?>
                 <li class="nav-item"><a class="nav-link" href="/View/Pages/login/login.php">Connexion</a></li>
                 <li class="nav-item"><a class="nav-link active" href="/View/Pages/Acceuil/index.php">Acceuil</a></li>
-                <li class="nav-item"><a class="nav-link" href="/View/Pages/inscription/inscription.php">Inscription</a></li>
+                <li class="nav-item"><a class="nav-link" href="/View/Pages/Inscription/inscription.php">Inscription</a></li>
                 <?php endif; ?>
             </ul>
         </div>

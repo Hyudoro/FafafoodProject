@@ -11,7 +11,7 @@
                 <li><a href="/View/Pages/login/logout.php"><i class="fa fa-sign-out-alt"></i> Déconnexion</a></li>
             <?php else: ?>
                 <li><a href="/View/Pages/Acceuil/index.php"><i class="fa fa-home"></i> Accueil</a></li>
-                <li><a href="/View/Pages/Inscription/inscription.php"><i class="fa fa-user"></i> Inscription</a></li>
+                <li><a href="/View/Pages/inscription/inscription.php"><i class="fa fa-user"></i> Inscription</a></li>
                 <li><a href="/View/Pages/login/login.php"><i class="fa fa-sign-in-alt"></i> Connexion</a></li>
             <?php endif; ?>
         </ul>
