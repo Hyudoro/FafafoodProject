@@ -1,4 +1,3 @@
-
 <?php
 $mysqlClient = new PDO(
     sprintf('mysql:host=%s;dbname=%s;port=%s;charset=utf8', MYSQL_HOST, MYSQL_NAME, MYSQL_PORT),

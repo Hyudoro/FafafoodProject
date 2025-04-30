@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 session_start();
 require_once __DIR__ . '/../../../Model/config/mysql.php';
@@ -13,7 +16,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     // Validation de l'email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $_SESSION['LOGIN_ERROR_MESSAGE'] = 'Il faut un email valide pour soumettre le formulaire.';
-        redirectToUrl('/Fafafood/View/Pages/login/login.php');
+        redirectToUrl('/View/Pages/login/login.php');
     } else {
         // Préparation et exécution de la requête pour chercher l'utilisateur par email
         $userStatement = $mysqlClient->prepare('SELECT * FROM users WHERE email = :email LIMIT 1');
@@ -36,5 +39,5 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 } else {
     // Message d'erreur si les champs requis ne sont pas remplis
     $_SESSION['LOGIN_ERROR_MESSAGE'] = 'Les données requises sont manquantes.';
-    redirectToUrl('/Fafafood/View/Pages/login/login.php');
+    redirectToUrl('/View/Pages/login/login.php');
 }
