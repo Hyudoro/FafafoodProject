@@ -1,4 +1,9 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
 session_start();
 
 require_once '../../../Model/config/mysql.php';
@@ -50,4 +55,4 @@ if (addUser($mysqlClient, $fullname, $email, $password, $age)) {
     header("Location: /View/Pages/Inscription/refus_inscription.php");
     exit();
 }
-?>
+
